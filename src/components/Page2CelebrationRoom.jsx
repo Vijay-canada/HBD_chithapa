@@ -4,6 +4,7 @@ import RoundBirthdayCake from './RoundBirthdayCake';
 import RoyalScroll from './RoyalScroll';
 import NextArrowButton from './NextArrowButton';
 import { playCelebrationFireworkSound } from '../utils/audio';
+import { getAssetUrl } from '../utils/assets';
 
 export default function Page2CelebrationRoom({
   litCandles,
@@ -50,13 +51,13 @@ export default function Page2CelebrationRoom({
         {/* Two Vintage Framed Photos (WA0036, WA0038) on the Background Wall */}
         <div className="wall-photo-frame frame-left-p3">
           <div className="gold-ornate-border">
-            <img src="/photos/WA0036.jpg" alt="Memory Photo" className="framed-photo-img" />
+            <img src={getAssetUrl('photos/WA0036.jpg')} alt="Memory Photo" className="framed-photo-img" />
           </div>
         </div>
 
         <div className="wall-photo-frame frame-right-p3">
           <div className="gold-ornate-border">
-            <img src="/photos/WA0038.jpg" alt="Memory Photo" className="framed-photo-img" />
+            <img src={getAssetUrl('photos/WA0038.jpg')} alt="Memory Photo" className="framed-photo-img" />
           </div>
         </div>
 

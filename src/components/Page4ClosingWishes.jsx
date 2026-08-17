@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import DustParticles from './DustParticles';
 import NextArrowButton from './NextArrowButton';
+import { getAssetUrl } from '../utils/assets';
 
 const REMAINING_PHOTOS = [
-  { id: 5, src: '/photos/WA0036.jpg', alt: 'Cherished Moment 5' },
-  { id: 6, src: '/photos/WA0038.jpg', alt: 'Cherished Moment 6' },
-  { id: 7, src: '/photos/WA0039.jpg', alt: 'Cherished Moment 7' },
-  { id: 8, src: '/photos/WA0040.jpg', alt: 'Cherished Moment 8' },
+  { id: 5, src: getAssetUrl('photos/WA0036.jpg'), alt: 'Cherished Moment 5' },
+  { id: 6, src: getAssetUrl('photos/WA0038.jpg'), alt: 'Cherished Moment 6' },
+  { id: 7, src: getAssetUrl('photos/WA0039.jpg'), alt: 'Cherished Moment 7' },
+  { id: 8, src: getAssetUrl('photos/WA0040.jpg'), alt: 'Cherished Moment 8' },
 ];
 
 export default function Page4ClosingWishes({ audioEnabled, onToggleAudio, onNextPage, onRestart }) {

@@ -1,6 +1,7 @@
 import React from 'react';
 import DustParticles from './DustParticles';
 import NextArrowButton from './NextArrowButton';
+import { getAssetUrl } from '../utils/assets';
 
 export default function Page7FamilyBlessings({ audioEnabled, onToggleAudio, onNextPage }) {
   return (
@@ -8,7 +9,7 @@ export default function Page7FamilyBlessings({ audioEnabled, onToggleAudio, onNe
       {/* Background image limage.jpg with ambient vignette */}
       <div 
         className="blessings-bg-image" 
-        style={{ backgroundImage: `url('/limage.jpg')` }}
+        style={{ backgroundImage: `url('${getAssetUrl('limage.jpg')}')` }}
       />
       <div className="blessings-dark-overlay" />
       

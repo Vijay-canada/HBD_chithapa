@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import DustParticles from './DustParticles';
 import NextArrowButton from './NextArrowButton';
+import { getAssetUrl } from '../utils/assets';
 
 export default function Page6ChittapaP123({ audioEnabled, onToggleAudio, onNextPage }) {
   const [selectedPhoto, setSelectedPhoto] = useState(null);
 
-  const photoP123 = { src: '/photos/p123.jpg', alt: 'Chittapa Memory P123' };
-  const photoP321 = { src: '/photos/p321.jpg', alt: 'Chittapa Memory P321' };
+  const photoP123 = { src: getAssetUrl('photos/p123.jpg'), alt: 'Chittapa Memory P123' };
+  const photoP321 = { src: getAssetUrl('photos/p321.jpg'), alt: 'Chittapa Memory P321' };
 
   return (
     <div className="page6-chittapa-p123-wrapper">

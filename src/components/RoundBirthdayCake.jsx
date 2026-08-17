@@ -1,5 +1,6 @@
 import React from 'react';
 import Candle from './Candle';
+import { getAssetUrl } from '../utils/assets';
 
 export default function RoundBirthdayCake() {
   return (
@@ -17,7 +18,7 @@ export default function RoundBirthdayCake() {
       {/* Birthday Cake Image 43181.jpg Container */}
       <div className="cake-image-display-container">
         <img
-          src="/1786960004749.png"
+          src={getAssetUrl('1786960004749.png')}
           alt="Happy Birthday Chocolate Cake"
           className="hero-cake-image"
         />

@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import DustParticles from './DustParticles';
+import { getAssetUrl } from '../utils/assets';
 
 const MEMORY_PHOTOS = [
-  { id: 1, title: 'Cherished Memories', year: '2018', src: '/images/memory-wall/photo-1.jpg', caption: 'With Chittapa' },
-  { id: 2, title: 'Golden Moments', year: '2019', src: '/images/memory-wall/photo-2.jpg', caption: 'Family Celebration' },
-  { id: 3, title: 'Invaluable Guidance', year: '2020', src: '/images/memory-wall/photo-3.jpg', caption: 'Guiding Light' },
-  { id: 4, title: 'Laughter & Warmth', year: '2021', src: '/images/memory-wall/photo-4.jpg', caption: 'Unforgettable Days' },
-  { id: 5, title: 'Strength & Inspiration', year: '2022', src: '/images/memory-wall/photo-5.jpg', caption: 'Role Model' },
-  { id: 6, title: 'Everlasting Support', year: '2023', src: '/images/memory-wall/photo-6.jpg', caption: 'Always Believed' },
-  { id: 7, title: 'Precious Milestones', year: '2024', src: '/images/memory-wall/photo-7.jpg', caption: 'Beautiful Years' },
-  { id: 8, title: 'With Lots of Love', year: '2026', src: '/images/memory-wall/photo-8.jpg', caption: 'Dear Chittapa' },
+  { id: 1, title: 'Cherished Memories', year: '2018', src: getAssetUrl('photos/WA0031.jpg'), caption: 'With Chittapa' },
+  { id: 2, title: 'Golden Moments', year: '2019', src: getAssetUrl('photos/WA0032.jpg'), caption: 'Family Celebration' },
+  { id: 3, title: 'Invaluable Guidance', year: '2020', src: getAssetUrl('photos/WA0033.jpg'), caption: 'Guiding Light' },
+  { id: 4, title: 'Laughter & Warmth', year: '2021', src: getAssetUrl('photos/WA0034.jpg'), caption: 'Unforgettable Days' },
+  { id: 5, title: 'Strength & Inspiration', year: '2022', src: getAssetUrl('photos/WA0036.jpg'), caption: 'Role Model' },
+  { id: 6, title: 'Everlasting Support', year: '2023', src: getAssetUrl('photos/WA0038.jpg'), caption: 'Always Believed' },
+  { id: 7, title: 'Precious Milestones', year: '2024', src: getAssetUrl('photos/WA0039.jpg'), caption: 'Beautiful Years' },
+  { id: 8, title: 'With Lots of Love', year: '2026', src: getAssetUrl('photos/WA0040.jpg'), caption: 'Dear Chittapa' },
 ];
 
 export default function Page3MemoryWall({ audioEnabled, onToggleAudio }) {

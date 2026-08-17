@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import { playSealBreakSound, playScrollUnrollSound } from '../utils/audio';
+import { getAssetUrl } from '../utils/assets';
 
 const FIRST_PAGE_PHOTOS = [
-  { id: 1, src: '/photos/WA0031.jpg', alt: 'Cherished Moment 1' },
-  { id: 2, src: '/photos/WA0032.jpg', alt: 'Cherished Moment 2' },
-  { id: 3, src: '/photos/WA0033.jpg', alt: 'Cherished Moment 3' },
-  { id: 4, src: '/photos/WA0034.jpg', alt: 'Cherished Moment 4' },
+  { id: 1, src: getAssetUrl('photos/WA0031.jpg'), alt: 'Cherished Moment 1' },
+  { id: 2, src: getAssetUrl('photos/WA0032.jpg'), alt: 'Cherished Moment 2' },
+  { id: 3, src: getAssetUrl('photos/WA0033.jpg'), alt: 'Cherished Moment 3' },
+  { id: 4, src: getAssetUrl('photos/WA0034.jpg'), alt: 'Cherished Moment 4' },
 ];
 
 const SECOND_PAGE_PHOTOS = [
-  { id: 5, src: '/photos/WA0036.jpg', alt: 'Cherished Moment 5' },
-  { id: 6, src: '/photos/WA0038.jpg', alt: 'Cherished Moment 6' },
-  { id: 7, src: '/photos/WA0039.jpg', alt: 'Cherished Moment 7' },
-  { id: 8, src: '/photos/WA0040.jpg', alt: 'Cherished Moment 8' },
+  { id: 5, src: getAssetUrl('photos/WA0036.jpg'), alt: 'Cherished Moment 5' },
+  { id: 6, src: getAssetUrl('photos/WA0038.jpg'), alt: 'Cherished Moment 6' },
+  { id: 7, src: getAssetUrl('photos/WA0039.jpg'), alt: 'Cherished Moment 7' },
+  { id: 8, src: getAssetUrl('photos/WA0040.jpg'), alt: 'Cherished Moment 8' },
 ];
 
 export default function RoyalScroll({ onOpenScroll }) {

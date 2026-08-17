@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import Candle from './Candle';
 import DustParticles from './DustParticles';
+import { getAssetUrl } from '../utils/assets';
 
 export default function VintageRoom({
   litCandles,
@@ -53,13 +54,13 @@ export default function VintageRoom({
           {/* Two Vintage Framed Photos (WA0033, WA0034) on the Room Wall/Shelf */}
           <div className="wall-photo-frame frame-left-wall">
             <div className="gold-ornate-border">
-              <img src="/photos/WA0033.jpg" alt="Memory Photo" className="framed-photo-img" />
+              <img src={getAssetUrl('photos/WA0033.jpg')} alt="Memory Photo" className="framed-photo-img" />
             </div>
           </div>
 
           <div className="wall-photo-frame frame-right-wall">
             <div className="gold-ornate-border">
-              <img src="/photos/WA0034.jpg" alt="Memory Photo" className="framed-photo-img" />
+              <img src={getAssetUrl('photos/WA0034.jpg')} alt="Memory Photo" className="framed-photo-img" />
             </div>
           </div>
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import DustParticles from './DustParticles';
+import { getAssetUrl } from '../utils/assets';
 
 const HANGING_CARDS = [
   {
@@ -14,8 +15,8 @@ const HANGING_CARDS = [
     type: 'images',
     title: 'Cherished Memories',
     photos: [
-      { src: '/photos/p456.jpg', alt: 'Chittapa Memory p456' },
-      { src: '/photos/WA0036.jpg', alt: 'Chittapa Memory' },
+      { src: getAssetUrl('photos/p456.jpg'), alt: 'Chittapa Memory p456' },
+      { src: getAssetUrl('photos/WA0036.jpg'), alt: 'Chittapa Memory' },
     ],
   },
   {
@@ -30,8 +31,8 @@ const HANGING_CARDS = [
     type: 'images',
     title: 'Golden Moments',
     photos: [
-      { src: '/photos/p654.jpg', alt: 'Chittapa Memory p654' },
-      { src: '/photos/WA0040.jpg', alt: 'Chittapa Memory' },
+      { src: getAssetUrl('photos/p654.jpg'), alt: 'Chittapa Memory p654' },
+      { src: getAssetUrl('photos/WA0040.jpg'), alt: 'Chittapa Memory' },
     ],
   },
   {

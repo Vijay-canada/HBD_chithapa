@@ -1,5 +1,6 @@
 import React from 'react';
 import DustParticles from './DustParticles';
+import { getAssetUrl } from '../utils/assets';
 
 export default function Page2MagicalCakeIntro({ onEnter, audioEnabled, onToggleAudio }) {
   return (
@@ -25,13 +26,13 @@ export default function Page2MagicalCakeIntro({ onEnter, audioEnabled, onToggleA
         {/* Two Subtly Placed Vintage Framed Photos (WA0031, WA0032) */}
         <div className="vintage-frame-accent frame-left">
           <div className="gold-ornate-border">
-            <img src="/photos/WA0031.jpg" alt="Memory Accent" className="framed-photo-img" />
+            <img src={getAssetUrl('photos/WA0031.jpg')} alt="Memory Accent" className="framed-photo-img" />
           </div>
         </div>
 
         <div className="vintage-frame-accent frame-right">
           <div className="gold-ornate-border">
-            <img src="/photos/WA0032.jpg" alt="Memory Accent" className="framed-photo-img" />
+            <img src={getAssetUrl('photos/WA0032.jpg')} alt="Memory Accent" className="framed-photo-img" />
           </div>
         </div>
 
